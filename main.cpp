@@ -47,6 +47,10 @@ int main(int argc, char *argv[]) {
             // check any operator
             num_2 = top_number->getNumber();
             top_number = top_number->getPreview();
+            if(top_number == NULL) {
+                printf("Argument error\n");
+                return 1;
+            }
             num_1 = top_number->getNumber();
             top_number = top_number->getPreview();
             switch(argv[i][0]){
